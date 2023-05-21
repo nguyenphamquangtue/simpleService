@@ -1,5 +1,5 @@
 Usage:
-    - `docker-compose up` \n
+    - `docker-compose up` <\br>
     - `make run`
 
 API for test:
