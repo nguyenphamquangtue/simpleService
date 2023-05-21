@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_USER: elotus
+      POSTGRES_PASSWORD: elotus
+      POSTGRES_DB: simpleService
+    ports:
+      - 5432:5432
+    # volumes:
+    #   - postgres-data:/var/lib/postgresql/data
+  
+  # simpleservice:
+  #   image: simpleservice
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - 3000:3000
+  #   depends_on:
+  #     - postgres
+  #   environment:
+  #     TZ: "Asia/Saigon"
