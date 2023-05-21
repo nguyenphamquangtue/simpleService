@@ -1,9 +1,9 @@
 Instructions
 Start the application by running the following command:
-- docker-compose up
+- `docker-compose up`
 Alternatively, you can use the following command if you have a Makefile:
 
-- make run
+- `make run`
 After starting the application, you can test the API using the following endpoints:
 
 Create a user: Send a POST request to http://localhost:3000/simple-service/users
